@@ -1,6 +1,6 @@
-let qrcode = select("img");
-let qrtext = select("textarea");
-let qrbtn = select("button");
+let qrcode = document.getElementById("qrimg")
+let qrtext = document.getElementById("qrtext");
+let qrbtn = document.getElementById("qrbtn");
 
 qrbtn.addEventListener('click' , ()=>{
 let size = "1000x1000";
