@@ -1,23 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
 body{
     background-color: whitesmoke;
     text-align: center;
 }
-img{
-    width: 300px;
-    height: 200px;
-}
-textarea{
-    width: 300px;
-    height: 50px;
-    font-size: 20px;
+.header {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0 0 5px 0 #001;
+    background-color: whitesmoke;
+    height: 100px;
+  }
+  .header img, .header h1 {
+    margin-top: 20px;
+  }
+  .header img {
+    width: 64px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .header h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+.app{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 300px;
+   height: 300px;
+   box-shadow: 0 0 2px 0 #001;
+
+  }
+.app img{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 2px 0 #001;
+    margin-top: 25px;
 }
-button{
+.app textarea{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    text-align: center;
+    resize: none;
+    outline: none;
+    transition: 0.2s;
+    border: 1px solid black;
+}
+.app textarea:hover{
+    box-shadow: 0 0 2px 0 #001;
+
+}
+.app button{
     background-color: lightgreen;
     color: white;
-    width: 150px;
+    width: 64px;
+    height: 25px;
     border: 0;
-    border-radius: 2rem;
     cursor: pointer;
     user-select: none;
+    transition: 0.2s;
+    margin-top: 54px;
+}
+.app button:hover{
+    box-shadow: 0 0 2px 0 #001;
 }
